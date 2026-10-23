@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crumb &amp; Co. Home Bakery (sample website)</title>
+<meta name="description" content="Sample website for a home bakery. Built as a portfolio project.">
+<style>
+  :root{--bg:#fff8ef;--ink:#3b2418;--muted:#7a5c4b;--accent:#b5472b;--accent-ink:#fff;--card:#ffffff;--line:#ecd9c4;--soft:#f6e3cc}
+  @media (prefers-color-scheme:dark){
+    :root{--bg:#1f1510;--ink:#f6e8da;--muted:#c4a995;--accent:#e57a5a;--accent-ink:#1f1510;--card:#2a1d16;--line:#4a342a;--soft:#3a271d}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Trebuchet MS","Segoe UI",Verdana,sans-serif;line-height:1.6}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px}
+  .notice{background:var(--soft);text-align:center;padding:8px 12px;font-size:.85rem;color:var(--muted)}
+  .hero{padding:56px 0 44px}
+  h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.4rem,9vw,4rem);line-height:1.05;margin:0 0 14px}
+  .lead{font-size:1.15rem;color:var(--muted);max-width:36ch;margin:0 0 24px}
+  .btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:13px 24px;border-radius:8px;text-decoration:none;font-weight:700}
+  .btn:hover{opacity:.9}
+  a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  section{padding:36px 0;border-top:1px solid var(--line)}
+  h2{font-family:Georgia,serif;font-size:1.6rem;margin:0 0 16px}
+  .menu{display:grid;gap:12px}
+  .item{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:flex;justify-content:space-between;gap:14px}
+  .item h3{margin:0 0 2px;font-size:1.05rem}
+  .item p{margin:0;color:var(--muted);font-size:.92rem}
+  .item strong{white-space:nowrap;color:var(--accent)}
+  ol{padding-left:20px;margin:0}
+  li{margin-bottom:8px}
+  .info p{margin:0 0 6px}
+  footer{padding:24px 0 90px;color:var(--muted);font-size:.85rem}
+  .order{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:var(--bg);border-top:1px solid var(--line);text-align:center}
+  .order .btn{width:100%;max-width:420px}
+</style>
+</head>
+<body>
+<div class="notice">Sample website made by Maya Dhane for her portfolio. The bakery is not real.</div>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Crumb &amp; Co.</h1>
+    <p class="lead">Fresh home-baked cakes, cookies and breads, made to order and delivered in your area.</p>
+    <a class="btn" href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20to%20order%20from%20Crumb%20%26%20Co.">Order on WhatsApp</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="menu">
+    <h2>Menu</h2>
+    <div class="menu">
+      <div class="item"><div><h3>Chocolate truffle cake (500 g)</h3><p>Rich, soft and eggless on request.</p></div><strong>₹550</strong></div>
+      <div class="item"><div><h3>Butter cookies (box of 12)</h3><p>Crisp, buttery and great for gifting.</p></div><strong>₹250</strong></div>
+      <div class="item"><div><h3>Whole wheat bread loaf</h3><p>Baked fresh every Saturday.</p></div><strong>₹120</strong></div>
+      <div class="item"><div><h3>Cupcakes (box of 6)</h3><p>Choose vanilla, chocolate or red velvet.</p></div><strong>₹360</strong></div>
+    </div>
+  </section>
+
+  <section id="how">
+    <h2>How to order</h2>
+    <ol>
+      <li>Message us on WhatsApp with what you want and the date.</li>
+      <li>We confirm the price and delivery time.</li>
+      <li>Pay when your order arrives, or by UPI to confirm for large orders.</li>
+    </ol>
+  </section>
+
+  <section id="info" class="info">
+    <h2>Details</h2>
+    <p><strong>Orders:</strong> Please order 24 hours before you need it.</p>
+    <p><strong>Delivery:</strong> Within 5 km. Delivery charge ₹[amount].</p>
+    <p><strong>Hours:</strong> Monday to Saturday, 10 am to 7 pm.</p>
+  </section>
+</main>
+
+<footer><div class="wrap">Sample site. Design and code by Maya Dhane.</div></footer>
+
+<div class="order"><a class="btn" href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20would%20like%20to%20order%20from%20Crumb%20%26%20Co.">Order on WhatsApp</a></div>
+</body>
+</html>
