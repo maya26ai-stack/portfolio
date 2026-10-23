@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loops &amp; Knots Crochet (sample website)</title>
+<meta name="description" content="Sample website for a handmade crochet shop. Built as a portfolio project.">
+<style>
+  :root{--bg:#fbf6f9;--ink:#2e2433;--muted:#6f5f78;--accent:#7a4fa3;--accent-ink:#ffffff;--card:#ffffff;--line:#e6d8ee;--soft:#f0e3f6;--pink:#f3c6d8;--glow1:#f9d6e6;--glow2:#d8c8f5;--stitch:rgba(122,79,163,.06)}
+  @media (prefers-color-scheme:dark){
+    :root{--bg:#1a141f;--ink:#f1e8f5;--muted:#bba9c7;--accent:#c79df0;--accent-ink:#1a141f;--card:#251c2c;--line:#41304d;--soft:#32243c;--pink:#6b3a52;--glow1:#4a2640;--glow2:#2f2352;--stitch:rgba(199,157,240,.07)}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background-color:var(--bg);background-image:radial-gradient(circle at 12% 0%,var(--glow1),transparent 45%),radial-gradient(circle at 95% 28%,var(--glow2),transparent 42%),radial-gradient(circle at 8% 80%,var(--glow1),transparent 42%),repeating-linear-gradient(45deg,var(--stitch) 0 2px,transparent 2px 14px),repeating-linear-gradient(-45deg,var(--stitch) 0 2px,transparent 2px 14px);color:var(--ink);font-family:"Trebuchet MS","Segoe UI",Verdana,sans-serif;line-height:1.6}
+  .wrap{max-width:780px;margin:0 auto;padding:0 20px}
+  .notice{background:var(--soft);text-align:center;padding:8px 12px;font-size:.85rem;color:var(--muted)}
+  .hero{padding:52px 0 40px}
+  h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.3rem,9vw,3.8rem);line-height:1.08;margin:0 0 14px}
+  .lead{font-size:1.15rem;color:var(--muted);max-width:38ch;margin:0 0 24px}
+  .btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:13px 24px;border-radius:999px;text-decoration:none;font-weight:700}
+  .btn:hover{opacity:.9}
+  a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  section{padding:36px 0;border-top:1px solid var(--line)}
+  h2{font-family:Georgia,serif;font-size:1.6rem;margin:0 0 16px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .swatch{height:110px;display:flex;align-items:center;justify-content:center;font-size:.85rem;color:var(--muted);background:repeating-linear-gradient(45deg,var(--soft),var(--soft) 10px,var(--pink) 10px,var(--pink) 20px)}
+  .swatch span{background:var(--card);padding:3px 10px;border-radius:999px}
+  .card .body{padding:14px 16px}
+  .card h3{margin:0 0 4px;font-size:1.05rem}
+  .card p{margin:0 0 8px;color:var(--muted);font-size:.92rem}
+  .card strong{color:var(--accent)}
+  ol{padding-left:20px;margin:0}
+  li{margin-bottom:8px}
+  .info p{margin:0 0 6px}
+  footer{padding:24px 0 90px;color:var(--muted);font-size:.85rem}
+  .order{position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:var(--bg);border-top:1px solid var(--line);text-align:center}
+  .order .btn{width:100%;max-width:420px}
+</style>
+</head>
+<body>
+<div class="notice">Sample website made by Maya Dhane for her portfolio. The shop is not real.</div>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Loops &amp; Knots</h1>
+    <p class="lead">Handmade crochet bags, toys, scrunchies and gifts, made to order in your choice of colours.</p>
+    <a class="btn" href="https://wa.me/919067895516?text=Hi%2C%20I%20would%20like%20to%20order%20from%20Loops%20%26%20Knots.">Order on WhatsApp</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="products">
+    <h2>What we make</h2>
+    <div class="grid">
+      <div class="card"><div class="swatch"><span>Photo here</span></div><div class="body"><h3>Crochet tote bag</h3><p>Strong cotton yarn, fits books and a laptop.</p><strong>₹650</strong></div></div>
+      <div class="card"><div class="swatch"><span>Photo here</span></div><div class="body"><h3>Amigurumi toy</h3><p>Soft animals: bunny, bear or octopus.</p><strong>₹450</strong></div></div>
+      <div class="card"><div class="swatch"><span>Photo here</span></div><div class="body"><h3>Scrunchies (set of 3)</h3><p>Gentle on hair, in your colours.</p><strong>₹150</strong></div></div>
+      <div class="card"><div class="swatch"><span>Photo here</span></div><div class="body"><h3>Flower bouquet</h3><p>Crochet flowers that never wilt.</p><strong>₹500</strong></div></div>
+      <div class="card"><div class="swatch"><span>Photo here</span></div><div class="body"><h3>Keychains</h3><p>Small, cute and perfect as gifts.</p><strong>₹80</strong></div></div>
+      <div class="card"><div class="swatch"><span>Photo here</span></div><div class="body"><h3>Custom order</h3><p>Tell us your idea and we will quote a price.</p><strong>On request</strong></div></div>
+    </div>
+  </section>
+
+  <section id="how">
+    <h2>How to order</h2>
+    <ol>
+      <li>Message us on WhatsApp with the item, colours and the date you need it.</li>
+      <li>We confirm the price and how long it will take.</li>
+      <li>Pay half to start your order, and the rest on delivery.</li>
+    </ol>
+  </section>
+
+  <section id="info" class="info">
+    <h2>Good to know</h2>
+    <p><strong>Time:</strong> Most items take 3 to 7 days, since everything is made by hand.</p>
+    <p><strong>Care:</strong> Hand wash gently and dry in the shade.</p>
+    <p><strong>Delivery:</strong> Local delivery or courier across India. Charges depend on distance.</p>
+  </section>
+</main>
+
+<footer><div class="wrap">Sample site. Design and code by Maya Dhane.</div></footer>
+
+<div class="order"><a class="btn" href="https://wa.me/919067895516?text=Hi%2C%20I%20would%20like%20to%20order%20from%20Loops%20%26%20Knots.">Order on WhatsApp</a></div>
+</body>
+</html>
